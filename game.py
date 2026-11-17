@@ -15,6 +15,7 @@ sentences = [
     "Hack Club is so goated, nothing beats its vibe!!",
     "Life is so peak, but I still think about her lol",
     "Life is beautiful when you find your own purpose!"
+    "When I am far from home,don't call me on phone"
 ]
 
 best_wpm = 0
