@@ -62,6 +62,7 @@ while playing:
     accuracy = (correct_characters / len(target)) * 100
 
     if wpm > best_wpm:
+        previous_wpm = best_wpm
         best_wpm = wpm
         new_record = True
     else:
@@ -74,7 +75,9 @@ while playing:
     print(f"High Score : {round(best_wpm, 1)} WPM")
     print(Fore.CYAN + "===================================================================")
     if new_record:
-        print(Style.BRIGHT + Fore.GREEN + "NEW HIGH SCORE! You beat your personal record!")
+        print(Style.BRIGHT + Fore.GREEN + "\nNEW HIGH SCORE!")
+        print(Fore.YELLOW + f"Previous Best : {round(previous_wpm, 1)} WPM")
+        print(Fore.GREEN + f"New Best      : {round(best_wpm, 1)} WPM")
         
     if typed == target:
         print(Style.BRIGHT + Fore.GREEN + "Flawless! Every single character matched!")
