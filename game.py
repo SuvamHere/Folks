@@ -1,22 +1,27 @@
 import time 
 import random 
+from colorama import Fore,Style, init
+
+init(autoreset=True)
 
 sentences = [
-    "Robotics Club of Valmiki is the best and nothing comes close",
-    "We are going to have a pizza anytime now ",
-    "Hey there stranger why are u here lol",
-    "Sakxem is so peak gang i can't appreciate him enough",
-    "Who don't love 3D printer like what is wrong with you",
-    "Roshan GC got his HC campfire Tshirt and he is happy with it lol",
-    "Aayush Poudel is loved by 50 girls of class 12",
-    "Hack Club is so goated i can't stop talking good about it",
-    "This is so peak yet I still think about her",
+    "Robotics Club of Valmiki is simply the best!!!",
+    "We will be having pizza, why are you even here lol?",
+    "Sakxem is so peak, words cannot describe his vibe",
+    "Who doesn't love 3d printers? That's just crazy!",
+    "Roshan got his Hack Club shirt and loves it so much", 
+    "Aayush Poudel has so many fans in grade twelve lol",
+    "Hack Club is so goated, nothing beats its vibe!!",
+    "Life is so peak, but I still think about her lol",
+    "Life is beautiful when you find your own purpose!"
 ]
 
 target= random.choice(sentences)
 
-print("-----------------------TERMINAL TYPING TEST-----------------------")
-print("Type the sentence below as fast and accurately as you can..\n")
+print(Fore.CYAN + "===================================================================")
+print(Style.BRIGHT + Fore.GREEN + "                    RCoV TYPING ARENA                       ")
+print(Fore.CYAN + "===================================================================")
+print("Type the sentence as fast and accurately as you can!\n")
 
 
 print("\nTYPE THIS:")
